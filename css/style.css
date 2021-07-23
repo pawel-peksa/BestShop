@@ -50,7 +50,7 @@ html {
 /* HEADER */
 header {
   height: 70px;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 .header__logo {
@@ -79,7 +79,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   height: calc(100vh - 70px);
-  width: 100vw;
+  width: 100%;
   text-align: center;
   color: var(--color-black);
   overflow: hidden;
@@ -109,4 +109,61 @@ header {
 }
 .open__background {
   height: 60%;
+}
+/* SECTION STATISTICS */
+.statistics__section {
+  height: 532px;
+}
+.statistics_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.statistics_container h2 {
+  font: var(--font-raleway-regular-36);
+  margin: 100px auto;
+}
+.statistics__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.statistics__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.statistics__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+.circle--green {
+  background: var(--color-green);
+}
+.circle--primary {
+  background: var(--color-primary);
+}
+.circle--redish {
+  background: var(--color-redish);
+}
+.statistics__icon {
+  position: relative;
+  left: 20px;
+}
+.statistics__numbers {
+  font: var(--font-raleway-extrabold-20);
+  margin-bottom: 19px;
+  letter-spacing: 6px;
+}
+.statistics__caption {
+  text-align: center;
+  color: var(--color-grey);
+  font: var(--font-raleway-regular-16);
 }
