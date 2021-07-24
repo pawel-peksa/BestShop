@@ -40,13 +40,13 @@ html {
 }
 .container {
   width: 1352px;
+  height: 100%;
   margin: 0 auto;
 }
 .flex--spacebetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
 }
 .hidden {
   visibility: hidden;
@@ -89,7 +89,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  height: calc(100vh - 70px);
+  height: calc(100vh);
   width: 100%;
   text-align: center;
   color: var(--color-black);
@@ -515,11 +515,16 @@ header {
   border-radius: 35px;
   background: var(--color-primary);
   box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  transition: 0.2s;
 
   font: var(--font-opensans-bold-13);
   color: var(--color-white);
   align-self: flex-end;
 }
+.form__submit:hover {
+  box-shadow: 5px 10px 14px 15px var(--color-primary-shadow);
+}
+/* CONTACT -- CUSTOM CHECKBOX */
 [type="checkbox"] {
   opacity: 0;
   width: 0;
@@ -537,4 +542,26 @@ header {
 }
 [type="checkbox"]:checked + span {
   background: url(../assets/Checkmark.svg) no-repeat center;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 59px;
+  background: var(--color-light-grey);
+  box-shadow: 0px -5px 40px #00000029;
+  height: 89px;
+}
+.footer__logo {
+  font: var(--font-raleway-light-26);
+  color: var(--color-primary);
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.footer__copy {
+  color: var(--color-grey);
+  font: var(--font-opensans-regular-11);
+}
+.social__wrapper a {
+  margin-left: 20px;
 }
