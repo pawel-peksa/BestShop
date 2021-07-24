@@ -11,6 +11,7 @@
   --font-opensans-bold-11: 700 11px/15px "Open Sans", sans-serif;
   --font-opensans-bold-13: 700 13px "Open Sans", sans-serif;
   --font-opensans-bold-16: 700 16px/22px "Open Sans", sans-serif;
+  --font-opensans-semibold-16: 600 16px/22px "Open Sans", sans-serif;
   --font-opensans-regular-11: 400 11px "Open Sans", sans-serif;
   --font-opensans-regular-12: 400 12px "Open Sans", sans-serif;
   --font-opensans-regular-14: 400 14px "Open Sans", sans-serif;
@@ -57,6 +58,9 @@ header {
   height: 70px;
   width: 100%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  z-index: 5;
+  background: var(--color-white);
 }
 .header__logo {
   color: rgba(8, 166, 228, 1);
@@ -433,4 +437,104 @@ header {
 }
 .column--third .pricing__CTA {
   background: var(--color-green);
+}
+
+/* CONTACT */
+
+/* CONTACT -- INFO & LINKS */
+.contact__section .container {
+  display: flex;
+  justify-content: center;
+}
+.column__info {
+  width: 30%;
+  margin-right: 40px;
+}
+.column__info h2 {
+  font: var(--font-raleway-regular-49);
+}
+.column__info p {
+  font: var(--font-opensans-regular-16);
+  margin: 22px auto 40px;
+}
+.links__wrapper {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.links__wrapper a {
+  font: var(--font-opensans-semibold-16);
+  color: var(--color-grey);
+  margin-right: 20px;
+}
+.links__wrapper img {
+  margin-right: 10px;
+}
+/* CONTACT -- FORM */
+.column__form {
+  max-width: 440px;
+  height: 372px;
+  display: flex;
+  flex-direction: column;
+}
+[type="text"],
+[type="email"] {
+  border: none;
+  border-bottom: 1px solid #95989a;
+  height: 40px;
+
+  font: var(--font-raleway-regular-17);
+  padding-left: 5px;
+  margin-top: 5px;
+  transition: 0.1s all;
+}
+[type="text"]:focus,
+[type="email"]:focus {
+  background: var(--color-primary);
+  border-radius: 5px;
+  color: var(--color-light-grey);
+}
+.label--textinput {
+  font: var(--font-opensans-bold-11);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 3.28px;
+  margin-top: 10px;
+}
+.label--checkbox {
+  color: #707070;
+  font: var(--font-opensans-regular-12);
+  display: flex;
+  margin: 34px 0 30px 0;
+}
+.form__submit {
+  display: inline-block;
+  width: 226px;
+  height: 57px;
+
+  border: none;
+  border-radius: 35px;
+  background: var(--color-primary);
+  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+
+  font: var(--font-opensans-bold-13);
+  color: var(--color-white);
+  align-self: flex-end;
+}
+[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.label--checkbox span {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background: var(--color-white);
+  border: 1px solid #95989a;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+[type="checkbox"]:checked + span {
+  background: url(../assets/Checkmark.svg) no-repeat center;
 }
