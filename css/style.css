@@ -505,6 +505,8 @@ header {
   font: var(--font-opensans-regular-12);
   display: flex;
   margin: 34px 0 30px 0;
+  position: relative;
+  cursor: pointer;
 }
 .form__submit {
   display: inline-block;
