@@ -11,6 +11,10 @@ html {
   width: 1352px;
   height: 100%;
   margin: 0 auto;
+  @media (max-width: 1352px) {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 .flex--spacebetween {
   display: flex;
