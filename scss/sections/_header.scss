@@ -5,9 +5,9 @@ header {
   width: 100%;
   // z-index: 5;
   background: $color-white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 
   @media (min-width: 760px) {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     position: fixed;
   }
 
@@ -32,7 +32,7 @@ header {
     }
 
     .navicon {
-      background: #333;
+      background: $color-primary;
       display: block;
       height: 2px;
       position: relative;
@@ -41,7 +41,7 @@ header {
 
       &:before,
       &:after {
-        background-color: #333;
+        background-color: $color-primary;
         content: "";
         display: block;
         height: 100%;
