@@ -479,33 +479,125 @@ html {
 header {
   height: 70px;
   width: 100%;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  position: fixed;
-  z-index: 5;
   background: #ffffff;
 }
-
-.header__logo {
+@media (min-width: 760px) {
+  header {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    position: fixed;
+  }
+}
+header .header__logo {
   color: #08a6e4;
   font: 300 32px/37px "Raleway", sans-serif;
+  display: block;
+  float: left;
+  padding: 15px 0;
 }
-
-.header__nav {
-  width: 544px;
+header .menu-icon {
+  cursor: pointer;
+  display: block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-
-.nav__link {
-  padding: 27px 10px 22px;
+@media (min-width: 760px) {
+  header .menu-icon {
+    display: none;
+  }
+}
+header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+  width: 18px;
+}
+header .menu-icon .navicon:before, header .menu-icon .navicon:after {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+header .menu-icon .navicon:before {
+  top: 5px;
+}
+header .menu-icon .navicon:after {
+  top: -5px;
+}
+header .menu-btn {
+  display: none;
+}
+header .menu-btn:checked ~ nav {
+  max-height: 240px;
+}
+header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+header nav {
+  overflow: hidden;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px #00000029, 0px -3px 6px #00000029;
+  margin: 0 -15px 0 -15px;
+}
+@media (min-width: 760px) {
+  header nav {
+    clear: none;
+    float: right;
+    max-height: none;
+    box-shadow: none;
+    padding-right: 30px;
+  }
+}
+header .header__nav li {
+  padding-left: 25px;
+}
+@media (min-width: 760px) {
+  header .header__nav li {
+    float: left;
+    padding: 0 50px 0 0;
+  }
+}
+header .header__nav .nav__link {
   font: 700 11px/15px "Open Sans", sans-serif;
   color: #a5a5a5;
+  display: block;
   letter-spacing: 3.28px;
   text-transform: uppercase;
   transition: 0.3s all;
+  padding: 15px 0;
 }
-
-.nav__link:hover {
+header .header__nav .nav__link:hover {
   color: #000000;
-  border-bottom: 4px solid #08a6e4;
+}
+@media (min-width: 760px) {
+  header .header__nav .nav__link {
+    padding: 27px 10px 22px;
+  }
+  header .header__nav .nav__link:hover {
+    color: #000000;
+    border-bottom: 4px solid #08a6e4;
+  }
 }
 
 /* OPEN */

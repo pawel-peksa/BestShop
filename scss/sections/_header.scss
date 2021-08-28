@@ -3,27 +3,136 @@
 header {
   height: 70px;
   width: 100%;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  position: fixed;
-  z-index: 5;
+  // z-index: 5;
   background: $color-white;
-}
-.header__logo {
-  color: rgba(8, 166, 228, 1);
-  font: $font-raleway-light-32;
-}
-.header__nav {
-  width: 544px;
-}
-.nav__link {
-  padding: 27px 10px 22px;
-  font: $font-opensans-bold-11;
-  color: $color-grey;
-  letter-spacing: 3.28px;
-  text-transform: uppercase;
-  transition: 0.3s all;
-}
-.nav__link:hover {
-  color: $color-black;
-  border-bottom: 4px solid $color-primary;
+
+  @media (min-width: 760px) {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    position: fixed;
+  }
+
+  .header__logo {
+    color: rgba(8, 166, 228, 1);
+    font: $font-raleway-light-32;
+    display: block;
+    float: left;
+    padding: 15px 0;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+
+    @media (min-width: 760px) {
+      display: none;
+    }
+
+    .navicon {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background-color 0.2s ease-out;
+      width: 18px;
+
+      &:before,
+      &:after {
+        background-color: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+      }
+
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: -5px;
+      }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+
+    &:checked ~ nav {
+      max-height: 240px;
+    }
+
+    &:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+
+    &:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+
+    &:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+
+    &:checked ~ .menu-icon:not(.steps) .navicon:before,
+    &:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
+  }
+
+  nav {
+    overflow: hidden;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background-color: $color-white;
+    box-shadow: 0px 3px 6px #00000029, 0px -3px 6px #00000029;
+    margin: 0 -15px 0 -15px;
+
+    @media (min-width: 760px) {
+      clear: none;
+      float: right;
+      max-height: none;
+      box-shadow: none;
+      padding-right: 30px;
+    }
+  }
+
+  .header__nav {
+    li {
+      padding-left: 25px;
+      @media (min-width: 760px) {
+        float: left;
+        padding: 0 50px 0 0;
+      }
+    }
+
+    .nav__link {
+      font: $font-opensans-bold-11;
+      color: $color-grey;
+      display: block;
+      letter-spacing: 3.28px;
+      text-transform: uppercase;
+      transition: 0.3s all;
+      padding: 15px 0;
+
+      &:hover {
+        color: $color-black;
+      }
+
+      @media (min-width: 760px) {
+        padding: 27px 10px 22px;
+
+        &:hover {
+          color: $color-black;
+          border-bottom: 4px solid $color-primary;
+        }
+      }
+    }
+  }
 }
