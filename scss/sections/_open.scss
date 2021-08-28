@@ -12,11 +12,11 @@
   overflow: hidden;
 }
 .open__section h1 {
-  font: var(--font-raleway-regular-49);
+  font: $font-raleway-regular-49;
   margin-bottom: 20px;
 }
 .open__section p {
-  font: var(--font-opensans-regular-16);
+  font: $font-opensans-regular-16;
   margin-bottom: 38px;
 }
 .open__cta {
@@ -24,7 +24,7 @@
   padding: 22.7px 156.8px;
 
   color: white;
-  font: var(--font-opensans-bold-16);
+  font: $font-opensans-bold-16;
 
   background: $color-primary;
   box-shadow: 5px 10px 14px $color-primary-shadow;

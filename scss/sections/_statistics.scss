@@ -11,7 +11,7 @@
   justify-content: center;
 }
 .statistics_container h2 {
-  font: var(--font-raleway-regular-36);
+  font: $font-raleway-regular-36;
   margin: 100px auto;
 }
 .statistics__wrapper {
@@ -48,12 +48,12 @@
   left: 20px;
 }
 .statistics__numbers {
-  font: var(--font-raleway-extrabold-20);
+  font: $font-raleway-extrabold-20;
   margin-bottom: 19px;
   letter-spacing: 6px;
 }
 .statistics__caption {
   text-align: center;
   color: $color-grey;
-  font: var(--font-raleway-regular-16);
+  font: $font-raleway-regular-16;
 }

@@ -1,3 +1,4 @@
+/* Colors */
 $color-primary: #08a6e4;
 $color-primary-shadow: rgba(7, 172, 230, 0.16);
 $color-redish: #fb3b64;
@@ -7,6 +8,7 @@ $color-grey: #a5a5a5;
 $color-light-grey: #f7f7f7;
 $color-white: #ffffff;
 
+/* Fonts */
 $font-opensans-bold-11: 700 11px/15px "Open Sans", sans-serif;
 $font-opensans-bold-13: 700 13px "Open Sans", sans-serif;
 $font-opensans-bold-16: 700 16px/22px "Open Sans", sans-serif;
@@ -24,29 +26,4 @@ $font-raleway-regular-17: 400 17px/20px "Raleway", sans-serif;
 $font-raleway-regular-16: 400 16px/19px "Raleway", sans-serif;
 $font-raleway-extrabold-20: 800 20px/24px "Raleway", sans-serif;
 $font-raleway-bold-20: 700 20px/24px "Raleway", sans-serif;
-$font-raleway-bold-21: 700 21px "Raleway", sans-serif;
 $font-raleway-bold-12: 700 12px "Raleway", sans-serif;
-$font-raleway-bold-9: 700 9px "Raleway", sans-serif;
-
-:root {
-  --font-opensans-bold-11: 700 11px/15px "Open Sans", sans-serif;
-  --font-opensans-bold-13: 700 13px "Open Sans", sans-serif;
-  --font-opensans-bold-16: 700 16px/22px "Open Sans", sans-serif;
-  --font-opensans-semibold-16: 600 16px/22px "Open Sans", sans-serif;
-  --font-opensans-regular-11: 400 11px "Open Sans", sans-serif;
-  --font-opensans-regular-12: 400 12px "Open Sans", sans-serif;
-  --font-opensans-regular-14: 400 14px "Open Sans", sans-serif;
-  --font-opensans-regular-16: 400 16px/22px "Open Sans", sans-serif;
-  --font-opensans-light-46: 300 46px "Open Sans", sans-serif;
-  --font-raleway-light-32: 300 32px/37px "Raleway", sans-serif;
-  --font-raleway-light-26: 300 26px/30px "Raleway", sans-serif;
-  --font-raleway-regular-49: 400 49px/57px "Raleway", sans-serif;
-  --font-raleway-regular-36: 400 36px/42px "Raleway", sans-serif;
-  --font-raleway-regular-17: 400 17px/20px "Raleway", sans-serif;
-  --font-raleway-regular-16: 400 16px/19px "Raleway", sans-serif;
-  --font-raleway-extrabold-20: 800 20px/24px "Raleway", sans-serif;
-  --font-raleway-bold-20: 700 20px/24px "Raleway", sans-serif;
-  --font-raleway-bold-21: 700 21px "Raleway", sans-serif;
-  --font-raleway-bold-12: 700 12px "Raleway", sans-serif;
-  --font-raleway-bold-9: 700 9px "Raleway", sans-serif;
-}

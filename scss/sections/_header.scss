@@ -10,14 +10,14 @@ header {
 }
 .header__logo {
   color: rgba(8, 166, 228, 1);
-  font: var(--font-raleway-light-32);
+  font: $font-raleway-light-32;
 }
 .header__nav {
   width: 544px;
 }
 .nav__link {
   padding: 27px 10px 22px;
-  font: var(--font-opensans-bold-11);
+  font: $font-opensans-bold-11;
   color: $color-grey;
   letter-spacing: 3.28px;
   text-transform: uppercase;

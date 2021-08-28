@@ -7,14 +7,14 @@ footer {
   height: 89px;
 }
 .footer__logo {
-  font: var(--font-raleway-light-26);
+  font: $font-raleway-light-26;
   color: $color-primary;
   display: inline-block;
   margin-bottom: 6px;
 }
 .footer__copy {
   color: $color-grey;
-  font: var(--font-opensans-regular-11);
+  font: $font-opensans-regular-11;
 }
 .social__wrapper a {
   margin-left: 20px;

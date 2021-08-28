@@ -21,11 +21,11 @@
   width: 416px;
 }
 .benefits__textwrapper h2 {
-  font: var(--font-raleway-regular-36);
+  font: $font-raleway-regular-36;
   margin-bottom: 30px;
 }
 .connected p {
-  font: var(--font-opensans-regular-16);
+  font: $font-opensans-regular-16;
   margin-bottom: 50px;
 }
 .horizontal-line {
@@ -99,7 +99,7 @@
   border-radius: 5px;
 }
 .textwrapper--third p {
-  font: var(--font-opensans-regular-16);
+  font: $font-opensans-regular-16;
   margin-bottom: 44px;
 }
 .textwrapper--third .horizontal-line {
