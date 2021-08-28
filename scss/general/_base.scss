@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 1352px;
+  height: 100%;
+  margin: 0 auto;
+}
+.flex--spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hidden {
+  visibility: hidden;
+}

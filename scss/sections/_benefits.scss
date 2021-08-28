@@ -1,0 +1,118 @@
+/* BENEFITS */
+
+.benefits__section {
+  background: var(--color-light-grey);
+}
+.benefits__row {
+  width: 1124px;
+  height: 370px;
+  margin: 37px auto;
+
+  border-radius: 5px;
+}
+.benefits__section .container {
+  padding: 68px 0;
+}
+.connected {
+  background: white;
+  border: 1px solid #e8e9ed;
+}
+.connected .benefits__textwrapper {
+  width: 416px;
+}
+.benefits__textwrapper h2 {
+  font: var(--font-raleway-regular-36);
+  margin-bottom: 30px;
+}
+.connected p {
+  font: var(--font-opensans-regular-16);
+  margin-bottom: 50px;
+}
+.horizontal-line {
+  height: 4px;
+  width: 327.5px;
+}
+/* BENEFITS -- First Row modifiers */
+.textwrapper--first {
+  height: 188px;
+  margin: 91px 0 91px 35px;
+}
+.textwrapper--first .horizontal-line {
+  background: var(--color-redish);
+}
+.imgwrapper--first {
+  width: 433px;
+  height: 294px;
+  margin: 38px 71px 38px 0;
+  position: relative;
+}
+.macbook {
+  height: 219px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+.shape__macbook {
+  width: 180px;
+  height: 180px;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  background: var(--color-redish);
+  border-radius: 41px;
+  position: absolute;
+  right: 41px;
+  top: 41px;
+}
+/* BENEFITS -- Second Row modifiers */
+.textwrapper--second {
+  height: 188px;
+  margin: 69px 20px 71px 0;
+}
+.textwrapper--second .horizontal-line {
+  background: var(--color-primary);
+}
+.imgwrapper--second {
+  width: 426px;
+  height: 345px;
+  margin: 12px 0 13px 70px;
+  position: relative;
+}
+.iphone {
+  height: 328px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+.shape__iphone {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  position: absolute;
+}
+/* BENEFITS -- Third Row modifiers */
+.textwrapper--third {
+  height: 370px;
+  width: 623px;
+  padding: 69px 34px 71px 35px;
+  background: var(--color-white);
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+}
+.textwrapper--third p {
+  font: var(--font-opensans-regular-16);
+  margin-bottom: 44px;
+}
+.textwrapper--third .horizontal-line {
+  background: var(--color-green);
+}
+.imgwrapper--third {
+  width: 440px;
+  height: 370px;
+  background: var(--color-green);
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+}
+.trumpet {
+  height: 207px;
+  margin: 98px 82px 64px 62px;
+}

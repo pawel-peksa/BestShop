@@ -1,0 +1,29 @@
+/* HEADER */
+
+header {
+  height: 70px;
+  width: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  z-index: 5;
+  background: var(--color-white);
+}
+.header__logo {
+  color: rgba(8, 166, 228, 1);
+  font: var(--font-raleway-light-32);
+}
+.header__nav {
+  width: 544px;
+}
+.nav__link {
+  padding: 27px 10px 22px;
+  font: var(--font-opensans-bold-11);
+  color: var(--color-grey);
+  letter-spacing: 3.28px;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+.nav__link:hover {
+  color: var(--color-black);
+  border-bottom: 4px solid var(--color-primary);
+}
