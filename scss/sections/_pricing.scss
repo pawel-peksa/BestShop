@@ -48,7 +48,7 @@
 }
 .features li {
   font: var(--font-opensans-regular-14);
-  color: var(--color-black);
+  color: $color-black;
   position: relative;
 }
 .included::before {
@@ -80,7 +80,7 @@
   height: 50px;
   border-radius: 23px;
 
-  color: var(--color-white);
+  color: $color-white;
   font: var(--font-opensans-bold-13);
 
   position: absolute;
@@ -98,40 +98,40 @@
   border: 1px solid #fb3b64;
 }
 .column--first .price {
-  color: var(--color-redish);
+  color: $color-redish;
 }
 .column--first .pricing__CTA {
-  background: var(--color-redish);
+  background: $color-redish;
 }
 /* PRICING -- second column */
 .column--second {
   border: 1px solid #07ace6;
 }
 .column--second .price {
-  color: var(--color-primary);
+  color: $color-primary;
 }
 .column--second .features {
   margin: 50px auto 79px;
 }
 .column--second .pricing__CTA {
-  background: var(--color-primary);
+  background: $color-primary;
 }
 .column--highlighted {
-  box-shadow: 5px 10px 27px var(--color-primary-shadow);
+  box-shadow: 5px 10px 27px $color-primary-shadow;
   width: 405px;
   height: 500px;
 }
 .pricing__CTA--bigger {
   width: 165px;
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  box-shadow: 5px 10px 14px $color-primary-shadow;
 }
 /* PRICING -- third column */
 .column--third {
   border: 1px solid #55dfb4;
 }
 .column--third .price {
-  color: var(--color-green);
+  color: $color-green;
 }
 .column--third .pricing__CTA {
-  background: var(--color-green);
+  background: $color-green;
 }

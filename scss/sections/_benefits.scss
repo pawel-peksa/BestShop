@@ -1,7 +1,7 @@
 /* BENEFITS */
 
 .benefits__section {
-  background: var(--color-light-grey);
+  background: $color-light-grey;
 }
 .benefits__row {
   width: 1124px;
@@ -38,7 +38,7 @@
   margin: 91px 0 91px 35px;
 }
 .textwrapper--first .horizontal-line {
-  background: var(--color-redish);
+  background: $color-redish;
 }
 .imgwrapper--first {
   width: 433px;
@@ -56,7 +56,7 @@
   width: 180px;
   height: 180px;
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
-  background: var(--color-redish);
+  background: $color-redish;
   border-radius: 41px;
   position: absolute;
   right: 41px;
@@ -68,7 +68,7 @@
   margin: 69px 20px 71px 0;
 }
 .textwrapper--second .horizontal-line {
-  background: var(--color-primary);
+  background: $color-primary;
 }
 .imgwrapper--second {
   width: 426px;
@@ -86,7 +86,7 @@
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  background: var(--color-primary);
+  background: $color-primary;
   position: absolute;
 }
 /* BENEFITS -- Third Row modifiers */
@@ -94,7 +94,7 @@
   height: 370px;
   width: 623px;
   padding: 69px 34px 71px 35px;
-  background: var(--color-white);
+  background: $color-white;
   border: 1px solid #e8e9ed;
   border-radius: 5px;
 }
@@ -103,12 +103,12 @@
   margin-bottom: 44px;
 }
 .textwrapper--third .horizontal-line {
-  background: var(--color-green);
+  background: $color-green;
 }
 .imgwrapper--third {
   width: 440px;
   height: 370px;
-  background: var(--color-green);
+  background: $color-green;
   border: 1px solid #e8e9ed;
   border-radius: 5px;
 }

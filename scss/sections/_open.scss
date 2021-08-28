@@ -8,7 +8,7 @@
   height: calc(100vh);
   width: 100%;
   text-align: center;
-  color: var(--color-black);
+  color: $color-black;
   overflow: hidden;
 }
 .open__section h1 {
@@ -26,8 +26,8 @@
   color: white;
   font: var(--font-opensans-bold-16);
 
-  background: var(--color-primary);
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  background: $color-primary;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
   border-radius: 40px;
   transition: 0.5s;
 }

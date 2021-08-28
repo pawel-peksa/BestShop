@@ -35,13 +35,13 @@
   margin-bottom: 14px;
 }
 .circle--green {
-  background: var(--color-green);
+  background: $color-green;
 }
 .circle--primary {
-  background: var(--color-primary);
+  background: $color-primary;
 }
 .circle--redish {
-  background: var(--color-redish);
+  background: $color-redish;
 }
 .statistics__icon {
   position: relative;
@@ -54,6 +54,6 @@
 }
 .statistics__caption {
   text-align: center;
-  color: var(--color-grey);
+  color: $color-grey;
   font: var(--font-raleway-regular-16);
 }

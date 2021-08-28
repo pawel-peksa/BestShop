@@ -22,7 +22,7 @@
 }
 .links__wrapper a {
   font: var(--font-opensans-semibold-16);
-  color: var(--color-grey);
+  color: $color-grey;
   margin-right: 20px;
 }
 .links__wrapper img {
@@ -48,13 +48,13 @@
 }
 [type="text"]:focus,
 [type="email"]:focus {
-  background: var(--color-primary);
+  background: $color-primary;
   border-radius: 5px;
-  color: var(--color-light-grey);
+  color: $color-light-grey;
 }
 .label--textinput {
   font: var(--font-opensans-bold-11);
-  color: var(--color-primary);
+  color: $color-primary;
   text-transform: uppercase;
   letter-spacing: 3.28px;
   margin-top: 10px;
@@ -74,16 +74,16 @@
 
   border: none;
   border-radius: 35px;
-  background: var(--color-primary);
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  background: $color-primary;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
   transition: 0.2s;
 
   font: var(--font-opensans-bold-13);
-  color: var(--color-white);
+  color: $color-white;
   align-self: flex-end;
 }
 .form__submit:hover {
-  box-shadow: 5px 10px 14px 15px var(--color-primary-shadow);
+  box-shadow: 5px 10px 14px 15px $color-primary-shadow;
 }
 /* CONTACT -- CUSTOM CHECKBOX */
 [type="checkbox"] {
@@ -96,7 +96,7 @@
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  background: var(--color-white);
+  background: $color-white;
   border: 1px solid #95989a;
   border-radius: 4px;
   margin-right: 10px;
