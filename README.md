@@ -5,5 +5,5 @@ One-page project of a fictional company specialized in online business software 
 
 * Layout made with AdobeXD.
 * Makes use of HTML5 and CSS3 functionalities. 
-* Created with BEM methodolody in mind.
+* Created with BEM methodology in mind.
 * Project created for desktop devices, so far it is not responsive nor mobile friendly.
