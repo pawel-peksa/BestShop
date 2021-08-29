@@ -40,9 +40,11 @@
       position: relative;
       flex: 1 1 100%;
       margin-bottom: 40px;
+      padding-bottom: 40px;
 
       @media (min-width: 781px) {
         flex: 1 0 30%;
+        padding: 0;
       }
     }
   }
