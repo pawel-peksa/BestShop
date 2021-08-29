@@ -1,10 +1,11 @@
 /* STATISTICS */
 
 .statistics__section {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 
   @media (min-width: 760px) {
     box-shadow: 0px -5px 80px #00000029;
+    padding-bottom: 120px;
   }
 }
 
