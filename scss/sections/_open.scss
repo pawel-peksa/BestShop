@@ -38,6 +38,9 @@
     box-shadow: 5px 10px 14px $color-primary-shadow;
     border-radius: 40px;
     transition: 0.5s;
+    @media (max-width: 460px) {
+      padding: 22.7px 50px;
+    }
     &:hover {
       background: darken($color-primary, 5%);
       box-shadow: 5px 10px 14px 10px darken($color-primary-shadow, 50%);
