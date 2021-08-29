@@ -8,6 +8,7 @@
   align-items: space-between;
   @media (max-width: 780px) {
     margin: 20px auto;
+    height: fit-content;
   }
 }
 .pricing__section h2 {
