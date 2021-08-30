@@ -5,17 +5,20 @@ footer {
   background: $color-light-grey;
   box-shadow: 0px -5px 40px #00000029;
   height: 89px;
-}
-.footer__logo {
-  font: $font-raleway-light-26;
-  color: $color-primary;
-  display: inline-block;
-  margin-bottom: 6px;
-}
-.footer__copy {
-  color: $color-grey;
-  font: $font-opensans-regular-11;
-}
-.social__wrapper a {
-  margin-left: 20px;
+
+  .footer__logo {
+    font: $font-raleway-light-26;
+    color: $color-primary;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+
+  .footer__copy {
+    color: $color-grey;
+    font: $font-opensans-regular-11;
+  }
+
+  .social__wrapper a {
+    margin-left: 20px;
+  }
 }
