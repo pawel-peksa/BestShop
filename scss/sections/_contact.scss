@@ -6,132 +6,147 @@
   justify-content: center;
   height: fit-content;
   flex-wrap: wrap;
-}
-.column__info {
-  width: 30%;
-  margin-right: 40px;
-  @media (max-width: 780px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-right: 0;
-  }
-  @media (max-width: 403px) {
-    align-items: flex-start;
-  }
-}
-.column__info h2 {
-  font: $font-raleway-regular-49;
 
-  @media (max-width: 860px) {
-    font-size: 2.2rem;
-  }
-}
-.column__info p {
-  font: $font-opensans-regular-16;
-  margin: 22px auto 40px;
-  @media (max-width: 860px) {
-    font-size: 0.9rem;
-    margin: 0;
-  }
-}
-.links__wrapper {
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-top: 25px;
+  .column__info {
+    width: 30%;
+    margin-right: 40px;
+    @media (max-width: 780px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      margin-right: 0;
+    }
+    @media (max-width: 403px) {
+      align-items: flex-start;
+    }
 
-  .contact__mail,
-  .contact__phone {
-    margin-top: 10px;
+    h2 {
+      font: $font-raleway-regular-49;
+      @media (max-width: 860px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    p {
+      font: $font-opensans-regular-16;
+      margin: 22px auto 40px;
+      @media (max-width: 860px) {
+        font-size: 0.9rem;
+        margin: 0;
+      }
+    }
+
+    .links__wrapper {
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-top: 25px;
+
+      .contact__mail,
+      .contact__phone {
+        margin-top: 10px;
+      }
+
+      a {
+        font: $font-opensans-semibold-16;
+        color: $color-grey;
+        margin-right: 20px;
+        @media (max-width: 860px) {
+          font-size: 0.9rem;
+        }
+      }
+
+      img {
+        margin-right: 10px;
+      }
+    }
   }
 }
-.links__wrapper a {
-  font: $font-opensans-semibold-16;
-  color: $color-grey;
-  margin-right: 20px;
-  @media (max-width: 860px) {
-    font-size: 0.9rem;
-  }
-}
-.links__wrapper img {
-  margin-right: 10px;
-}
+
 /* CONTACT -- FORM */
 .column__form {
   max-width: 440px;
   height: 372px;
   display: flex;
   flex-direction: column;
-}
-[type="text"],
-[type="email"] {
-  border: none;
-  border-bottom: 1px solid #95989a;
-  height: 40px;
 
-  font: $font-raleway-regular-17;
-  padding-left: 5px;
-  margin-top: 5px;
-  transition: 0.1s all;
-}
-[type="text"]:focus,
-[type="email"]:focus {
-  background: $color-primary;
-  border-radius: 5px;
-  color: $color-light-grey;
-}
-.label--textinput {
-  font: $font-opensans-bold-11;
-  color: $color-primary;
-  text-transform: uppercase;
-  letter-spacing: 3.28px;
-  margin-top: 10px;
-}
-.label--checkbox {
-  color: #707070;
-  font: $font-opensans-regular-12;
-  display: flex;
-  margin: 34px 0 30px 0;
-  position: relative;
-  cursor: pointer;
-}
-.form__submit {
-  display: inline-block;
-  width: 226px;
-  height: 57px;
+  [type="text"],
+  [type="email"] {
+    border: none;
+    border-bottom: 1px solid #95989a;
+    height: 40px;
 
-  border: none;
-  border-radius: 35px;
-  background: $color-primary;
-  box-shadow: 5px 10px 14px $color-primary-shadow;
-  transition: 0.2s;
+    font: $font-raleway-regular-17;
+    padding-left: 5px;
+    margin-top: 5px;
+    transition: 0.1s all;
+  }
 
-  font: $font-opensans-bold-13;
-  color: $color-white;
-  align-self: flex-end;
-}
-.form__submit:hover {
-  box-shadow: 5px 10px 14px 15px $color-primary-shadow;
-}
-/* CONTACT -- CUSTOM CHECKBOX */
-[type="checkbox"] {
-  opacity: 0;
-  width: 0;
-  height: 0;
-  position: absolute;
-}
-.label--checkbox span {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  background: $color-white;
-  border: 1px solid #95989a;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-[type="checkbox"]:checked + span {
-  background: url(../assets/Checkmark.svg) no-repeat center;
+  [type="text"]:focus,
+  [type="email"]:focus {
+    background: $color-primary;
+    border-radius: 5px;
+    color: $color-light-grey;
+  }
+
+  .label--textinput {
+    font: $font-opensans-bold-11;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 3.28px;
+    margin-top: 10px;
+  }
+
+  .label--checkbox {
+    color: #707070;
+    font: $font-opensans-regular-12;
+    display: flex;
+    margin: 34px 0 30px 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .form__submit {
+    display: inline-block;
+    width: 226px;
+    height: 57px;
+
+    border: none;
+    border-radius: 35px;
+    background: $color-primary;
+    box-shadow: 5px 10px 14px $color-primary-shadow;
+    transition: 0.2s;
+
+    font: $font-opensans-bold-13;
+    color: $color-white;
+    align-self: flex-end;
+
+    &:hover {
+      box-shadow: 5px 10px 14px 15px $color-primary-shadow;
+    }
+  }
+
+  /* CONTACT -- CUSTOM CHECKBOX */
+  [type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+  [type="checkbox"]:checked + span {
+    background: url(../assets/Checkmark.svg) no-repeat center;
+  }
+
+  .label--checkbox span {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: $color-white;
+    border: 1px solid #95989a;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
 }
