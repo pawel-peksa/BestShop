@@ -1,0 +1,1 @@
+console.log('dodałeś js poprawnie B-)')
