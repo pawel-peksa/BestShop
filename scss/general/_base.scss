@@ -7,6 +7,12 @@ html {
   box-sizing: inherit;
   text-decoration: none;
 }
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
 .container {
   width: 1352px;
   height: 100%;
@@ -23,4 +29,36 @@ html {
 }
 .hidden {
   visibility: hidden;
+}
+
+/* CONTACT -- CUSTOM CHECKBOX */
+
+.label--checkbox {
+  color: #707070;
+  font: $font-opensans-regular-12;
+  display: flex;
+  margin: 34px 0 30px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+[type="checkbox"]:checked + span {
+  background: url(../assets/Checkmark.svg) no-repeat center;
+}
+
+.label--checkbox span {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background: $color-white;
+  border: 1px solid #95989a;
+  border-radius: 4px;
+  margin-right: 10px;
 }
